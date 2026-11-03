@@ -1,1 +1,18 @@
+print("Bem-vindo ao Quiz!")
 
+resposta1 = input("Qual é a capital do Brasil? ").lower()
+resposta2 = input("Quanto é 2 + 2? ").lower()
+
+if resposta1 == "brasília" and resposta2 == "4":
+    print("Parabéns! Você acertou as duas perguntas!")
+
+elif resposta1 == "brasília" and resposta2 != "4":
+    print("Você acertou a primeira pergunta e errou a segunda!")
+
+elif resposta1 != "brasília" and resposta2 == "4":
+    print("Você errou a primeira pergunta e acertou a segunda!")
+
+elif resposta1 != "brasília" and resposta2 != "4":
+    print("Você errou as duas perguntas!")
+
+print("Fim do Quiz!")
